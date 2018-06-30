@@ -1,0 +1,54 @@
+@bgcolor : #dedede;
+@bghead : yellow; 
+@screenwidth:700px;
+
+h1{
+
+	text-align : center;
+	
+	background-color : @bghead;
+	 box-shadow: 0 2px 8px 3px #80808094;
+	 margin-bottom: 100px;
+	 margin-top: 20px;
+	&:after{
+		content: "Screen width Less than 700px";
+	}
+
+}
+.b{
+	border : 1px solid black; 
+	background-color : @bgcolor;
+	text-align: center;
+
+	&:hover{
+		background-color : @bghead;
+	}
+}
+
+@media screen and (min-width: @screenwidth){
+
+h1{
+	
+	text-align : center;
+	background-color : @bgcolor;
+	
+
+	&:after{
+	 content: "Screen Width Greater than 700px";
+	}
+}
+	.b{
+	border : 1px solid black; 
+	background-color :#1988ff;
+
+			&:hover{
+		background-color : @bgcolor;
+	}
+	}
+}
+.c{
+	border: 0 0 1px 1px solid black ;
+}
+.rwidth{
+	min-height: 50px;
+}

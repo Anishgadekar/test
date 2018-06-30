@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  background-color: #ffff00;
+  box-shadow: 0 2px 8px 3px #80808094;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+h1:after {
+  content: "Screen width Less than 700px";
+}
+.b {
+  border: 1px solid black;
+  background-color: #dedede;
+  text-align: center;
+}
+.b:hover {
+  background-color: #ffff00;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    text-align: center;
+    background-color: #dedede;
+  }
+  h1:after {
+    content: "Screen Width Greater than 700px";
+  }
+  .b {
+    border: 1px solid black;
+    background-color: #1988ff;
+  }
+  .b:hover {
+    background-color: #dedede;
+  }
+}
+.c {
+  border: 0 0 1px 1px solid black ;
+}
+.rwidth {
+  min-height: 50px;
+}
